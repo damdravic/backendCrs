@@ -25,7 +25,7 @@ public class CrsUserDetailsService implements UserDetailsService {
 
         user.orElseThrow(() -> new UsernameNotFoundException("User NotExist"));
 
-        return  user.map(CsrUserDetails::new).get();
+        return  user.map(CrsUserDetails::new).get();
 
     }
 

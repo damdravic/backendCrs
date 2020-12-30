@@ -9,16 +9,16 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-public class CsrUserDetails implements UserDetails {
+public class CrsUserDetails implements UserDetails {
 
     @Autowired
     private User user;
 
-    public CsrUserDetails(User user) {
+    public CrsUserDetails(User user) {
         this.user = user;
     }
 
-    public CsrUserDetails() {
+    public CrsUserDetails() {
     }
 
     @Override
